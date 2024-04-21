@@ -11,10 +11,10 @@ body {
     margin: 1.6rem;
 }
 
-.btn:hover{
+/* .btn:hover{
     transform: scale(1.05);
 }
-
+ */
 .btn-container {
     display: flex;
     justify-content: center;
