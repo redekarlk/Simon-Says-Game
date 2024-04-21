@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(244, 225, 176);
+    background-color: rgb(244, 216, 148);
 }
 .body {
     text-align: center;
@@ -12,6 +12,8 @@ body{
     border: 10px solid black;
     margin: 1.6rem;
 }
+
+
 
 /* .btn:hover{
     transform: scale(1.05);
@@ -106,6 +108,21 @@ body{
         cursor: pointer;
         /* display: none; */
     }
+    /* .sidebar_menu .menu li{
+        margin-top: 1rem;
+        padding: 4px 2px;
+        color: white;
+        font-size: large;
+    } */
+
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+    
 
 }
 @media only screen and (max-width: 360px) {
@@ -117,16 +134,15 @@ body{
     }
 
 
-    .sidebar_menu .menu ol li{
-        margin-top: 1rem;
-        padding: 4px 6px;
-        color: white;
-      
+    
+
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 16px;
     }
 
-    .btn_one i{
-        display: none;
-    }
 
 } 
 
@@ -187,10 +203,10 @@ body{
 }
 
 .sidebar_menu .menu{
-    /* color: white; */
+    color: white;
     position: absolute;
-    width: 100%;
-    top: 80px;
+    width: 104%;
+    top: 60px;
     position: absolute;
     
 }
