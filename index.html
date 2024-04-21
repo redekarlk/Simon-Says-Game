@@ -6,34 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Says Game</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
-       
+
     </style>
-    
+
 </head>
 
 <body>
-    <h1>Simon Says Game</h1>
-    <h2>Press Start button yo start Game</h2>
 
-    <div class="btn-container">
-        <div class="line-one">
-            <div class="btn red" type="button" id="red"></div>
-            <div class="btn yellow" type="button" id="yellow"></div>
+    <div class="main_box">
+        <!-- <input type="checkbox" id="check" /> -->
+        <div class="btn_one">
+          <label for="check" >
+            <i class="fa-solid fa-bars"></i>
+          </label>
         </div>
-        <div class="line-two">
-            <div class="btn green" type="button" id="green"></div>
-            <div class="btn purple" type="button" id="purple"></div>
+    
+        <div class="sidebar_menu">
+          <div class="logo">
+            <a href="#">Instructions</a>
+          </div>
+    
+          <div class="btn_two">
+            <label for="check" style="color: grey">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+          </div>
+    
+          <div class="menu">
+            <ol>
+                <li>Press the "Start Game" button to begin.</li>
+                <li>Simon will produce a sequence of colors by lighting up buttons in a specific order.</li>
+                <li>Watch carefully to the sequence.</li>
+                <li>After Simon completes the sequence, it's your turn to repeat it.</li>
+                <li>To repeat the sequence, click on the buttons in the same order that Simon lit them up.</li>
+                <li>If you repeat the sequence correctly, Simon will add another color to the sequence, making it longer.</li>
+                <li>If you make a mistake, the game ends.</li>
+                <li>Try to beat your highest score with each new game!</li>
+            </ol>
+          </div>
+    
+         
         </div>
-    </div>
+      </div>
 
-    <div class="start-restart-btn">
-        <button id="startBtn" class="str-res-btn">Start Game</button>
-        <button id="restartBtn" class="str-res-btn" style="display:none;">Restart Game</button>
-    </div>
+    <div class="body">
+        <h1>Simon Says Game</h1>
+        <h2>Press Start button yo start Game</h2>
 
-    <div>
-        <p>Highest Score: <span id="highestScore">0</span></p>
+        <div class="btn-container">
+            <div class="line-one">
+                <div class="btn red" type="button" id="red"></div>
+                <div class="btn yellow" type="button" id="yellow"></div>
+            </div>
+            <div class="line-two">
+                <div class="btn green" type="button" id="green"></div>
+                <div class="btn purple" type="button" id="purple"></div>
+            </div>
+        </div>
+
+        <div class="start-restart-btn">
+            <button id="startBtn" class="str-res-btn">Start Game</button>
+            <button id="restartBtn" class="str-res-btn" style="display:none;">Restart Game</button>
+        </div>
+
+        <div class="score">
+            <p><b>Highest Score:  <span id="highestScore">0</span></b></p>
+        </div>
     </div>
 
     <script src="app.js"></script>
