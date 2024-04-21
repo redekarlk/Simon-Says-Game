@@ -1,3 +1,22 @@
+// JavaScript code to handle sliding animation of the main box button
+document.addEventListener("DOMContentLoaded", function() {
+    const mainBox = document.querySelector('.main_box');
+    const btnOne = document.querySelector('.btn_one');
+    const btnTwo = document.querySelector('.btn_two');
+    const sidebarMenu = document.querySelector('.sidebar_menu');
+
+    btnOne.addEventListener('click', function() {
+        mainBox.classList.add('slide');
+        sidebarMenu.style.left = '0';
+    });
+
+    btnTwo.addEventListener('click', function() {
+        mainBox.classList.remove('slide');
+        sidebarMenu.style.left = '-400px';
+    });
+});
+
+
 
 let gameSeq = [];
 let userSeq = [];
@@ -65,7 +84,7 @@ function levelUp() {
     let randColor = btns[randIdx];
     let randbtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);
-    // console.log(gameSeq);
+    console.log(gameSeq);
     gameFlash(randbtn);
 }
 
