@@ -140,7 +140,7 @@ function updateHighestScore() {
 
 // store it only in localstorage.
 // Get the highest score from localStorage if it exists
-ighestScore = localStorage.getItem("highestScore") || 0;
+highestScore = localStorage.getItem("highestScore") || 0;
 
 // Update the highest score display
 highestScoreElement = document.getElementById("highestScore");
