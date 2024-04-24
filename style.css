@@ -244,3 +244,7 @@ body{
 .score{
     font-size: 1.5rem;
 }
+
+.winner b{
+    color: #7841be;
+}
